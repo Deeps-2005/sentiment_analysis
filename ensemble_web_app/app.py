@@ -3,11 +3,11 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open('model/ensemble_voting.pkl', 'rb'))
+model = pickle.load(open('ensemble_web_app/model/ensemble_voting.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('ensemble_web_app/templates/index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
