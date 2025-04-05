@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 # Load model components
 vectorizer = joblib.load("vectorizer.pkl")
 svd = joblib.load("svd.pkl")
-voting = joblib.load("ensemble_voting.pkl")
+voting = joblib.load("prediction.pkl")
 
 # Title
 st.title("🌟 Product Review Sentiment Analysis Dashboard")
